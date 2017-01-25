@@ -40,14 +40,31 @@
 	</div>
 
 	<!-- On commence l'animation en "écoutant" le scroll a partir de 1000px de base. -->
-	<div class="animation" style="background:#F1C5A5; height:20000px; width:100%">
+	<div class="animation" style="background:#F1C5A5; height:60000px; width:100%">
 		<!-- Ici s'affiche les images et blocs de texte en fonciton du scroll -->
 	
 		<!-- On affiche le decors -->
-		<div data-0="display:none" data-_main_animation-0="display:block" style="background:grey; width: 100%; height: 300px; top:80%"></div>
+		<div class="back-road"
+			data-0="display:none" 
+			data-_main_animation-0="display:block; top:95%"
+			data-_main_animation-1000="display:block; top:75%"
+			data-_main_animation-50000="left:0%"
+			data-_main_animation-58000="left:100%"
+			style="background:grey; width: 100%; height:250px;">
+		</div>
+
+		<div>
+			<img src="dist/images/road.gif" alt=""
+			data-0= "display:none"
+			data-_main_animation-0="display:block; top:100%"
+			data-_main_animation-3000="display:block; top:75%"
+			data-_main_animation-50000="left:0%"
+			data-_main_animation-58000="left:100%"
+			style=" width: 100%; ">
+		</div>
 
 		<!-- On affiche les anims -->
-		<div class="text"  data-_main_animation-0="display:none;" data-_main_animation-300="display:block; opacity:0; left:-5%" data-_main_animation-1000="display:block; opacity:1; left:10%" data-_main_animation-3000="opacity:1; left:50%; top:30px" data-_main_animation-5500="opacity:0; top:-150%">
+		<div class="text"  data-_main_animation-0="display:none;" data-_main_animation-300="display:block; opacity:0; left:-5%" data-_main_animation-1000="display:block; opacity:1; left:10%" data-_main_animation-7000="opacity:1; left:50%; top:30px" data-_main_animation-15500="opacity:0; top:-150%">
 			<p>Un enfant habitant de Douala va chercher son eau au puit. </p>
 		</div>
 
@@ -60,9 +77,9 @@
 
 		<div class="text"  
 			data-_main_animation-0="display:none;" 
-			data-_main_animation-3900="display:block; opacity:1; left:-5%" 
-			data-_main_animation-6000="opacity:1; left:50%; top:30px" 
-			data-_main_animation-8000="opacity:0; top:-150%">
+			data-_main_animation-19000="display:block; opacity:1; left:-5%" 
+			data-_main_animation-31000="opacity:1; left:50%; top:30px" 
+			data-_main_animation-50000="opacity:0; top:-150%">
 			<p> Autre texte ........ </p>
 		</div>
 
