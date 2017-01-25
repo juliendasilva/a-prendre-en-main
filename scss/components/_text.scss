@@ -22,3 +22,17 @@
         font-family: $font1;
     }
 }
+
+.explanation{
+    .text{
+        font-family: $font1;
+        color: $color2;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 64px;
+        @include breakmax($desktop-s){
+            font-size: 13px;
+            margin-bottom: 35px;
+        }
+    }
+}

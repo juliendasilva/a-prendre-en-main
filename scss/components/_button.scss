@@ -1,7 +1,7 @@
 .funding__button {
-    display: flex;
+    @include displayFlex(); 
     justify-content: space-between;
-    align-items: center;
+    @include alignItem(); 
     @include breakmax($desktop-s){
         flex-direction: column;
     }
@@ -10,7 +10,7 @@
         align-items: flex-start;
     }
     @include breakmax($mobile){
-        align-items: center;
+        @include alignItem(); 
     }
     .button {
         background-color: $color4;

@@ -1,0 +1,15 @@
+.explanation{
+    .list{
+        li{
+            margin-bottom: 22px;
+            font-family: $font1;
+            color: $color2;
+            font-size: 16px;
+            line-height: 24px;
+            &:before{
+                content: url($directory-img + 'dotwhite.svg');
+                margin-right: 10px;
+            }
+        }
+    }
+}

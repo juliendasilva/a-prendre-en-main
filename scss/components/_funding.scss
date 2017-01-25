@@ -1,9 +1,8 @@
 .funding{
-    display: flex;
+    @include displayFlex();
     @include breakmax($tablet){
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        @include alignItem();
     }
 }
 
@@ -15,11 +14,11 @@
 }
 
 .funding__content{
-    display: flex;
+    @include displayFlex();
     justify-content: space-between;
     @include breakmax($mobile){
         flex-direction: column;
-        align-items: center;
+        @include alignItem();
         margin-bottom: 35px;
     }
 }

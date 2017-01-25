@@ -11,3 +11,31 @@
         }
     }
 }
+
+.explanation{
+    .title{
+        font-family: $font3;
+        font-weight: bold;
+        color: $color2;
+        font-size: 45px;
+        width: 80%;
+        margin-bottom: 27px;
+        @include breakmax($desktop-s){
+            width: 100%;
+            font-size: 25px;
+        }
+        .ville{
+            font-size: 15px;
+            @include breakmax($mobile){
+                display: block;
+                margin-top: 15px;
+            }
+        }
+    }
+    .subtitle{
+        font-family: $font3;
+        color: $color2;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+}
