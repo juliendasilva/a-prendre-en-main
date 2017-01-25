@@ -4,6 +4,8 @@
 @import "helpers/mixins";
 
 @import "base/fonts";
+@import "base/general";
+
 
 @import "components/anim";
 @import "components/fixed-positioning";
@@ -26,6 +28,6 @@
 @import "components/link";
 @import "components/partenaires";
 
-@import "base/general";
+@import "layout/footer";
 
 @import "pages/_article.scss";

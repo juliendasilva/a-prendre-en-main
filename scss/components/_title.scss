@@ -101,5 +101,22 @@
         color: $color1;
         font-size: 45px;
         margin-right: 109px;
+        @include breakmax($desktop-s){
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.footer{
+    .footer__title{
+        font-family: $font1;
+        color: $color4;
+        display: flex;
+        margin-bottom: 48px;
+        @include breakmax($mobile){
+            margin-bottom: 18px;
+        }
     }
 }
