@@ -45,6 +45,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "BentonSans-Light";
+  src: url("../fonts/BentonSans-Light/BentonSans-Light.eot");
+  src: url("../fonts/BentonSans-Light/BentonSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Light/BentonSans-Light.woff") format("woff"), url("../fonts/BentonSans-Light/BentonSans-Light.ttf") format("truetype"), url("../fonts/BentonSans-Light/BentonSans-Light.svg#BentonSans-Light") format("svg"); }
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans/BentonSans.eot");
+  src: url("../fonts/BentonSans/BentonSans.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans/BentonSans.woff") format("woff"), url("../fonts/BentonSans/BentonSans.ttf") format("truetype"), url("../fonts/BentonSans/BentonSans.svg#BentonSans") format("svg"); }
+
+@font-face {
+  font-family: "Besom";
+  src: url("../fonts/Besom/Besom.eot");
+  src: url("../fonts/Besom/Besom.eot?#iefix") format("embedded-opentype"), url("../fonts/Besom/Besom.woff") format("woff"), url("../fonts/Besom/Besom.ttf") format("truetype"), url("../fonts/Besom/Besom.svg#Besom") format("svg"); }
+
 /*#kanjioverload {
 	width:100%;
 	height:100%;
@@ -215,3 +230,14 @@ html, body {
   font-size: 150%;
   z-index: 101;
   color: white; }
+
+.containerInfo {
+  height: 5000px;
+  width: 100%;
+  background-color: #F1C5A5; }
+
+.degraded {
+  background-image: url("../images/degraded.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 776px; }
