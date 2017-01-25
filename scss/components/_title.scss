@@ -1,7 +1,10 @@
-.title{
-    font-family: $font3;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 45px;
-    width: 405px;
+.funding {
+    .title {
+        font-family: $font3;
+        font-weight: bold;
+        color: $color2;
+        font-size: 45px;
+        width: 405px;
+        margin-bottom: 27px;
+    }
 }
