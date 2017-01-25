@@ -1,3 +1,24 @@
 .numbers{
-
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: auto;
+    margin-bottom: 216px;
+    @include breakmax($desktop-s){
+        width: 410px;
+        flex-wrap: wrap;
+    }
+    @include breakmax($mobile){
+        justify-content: center;
+        width: 100%;
+    }
+    .numbersItem{
+        width: 181px;
+        text-align: center;
+        @include breakmax($mobile){
+            width: 90%;
+            margin-bottom: 65px;
+        }
+    }
 }
+
