@@ -1,14 +1,15 @@
 .someWord{
-    display: flex;
+    @include displayFlex; 
     width: 970px;
     margin: auto;
+    margin-bottom: 177px;
     @include breakmax($desktop-s){
         width: 720px;
         display: block;
     }
     @include breakmax($tablet){
         flex-direction: column;
-        display: flex;
+        @include displayFlex; 
         width: 90%;
     }
     .someWord__numbers{

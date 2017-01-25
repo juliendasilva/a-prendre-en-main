@@ -1,0 +1,95 @@
+.teams{
+    height: 700px;
+    display: flex;
+    margin-bottom: 192px;
+    @include breakmax($desktop-s){
+        height: initial;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .teams__text{
+        width: 50%;
+        height: 100%;
+        @include breakmax($desktop-s){
+            width: 100%;
+        }
+    }
+    .teams__images{
+        width: 50%;
+        @include breakmax($mobile){
+            width: 100%;
+        }
+    }
+    .teams__item{
+        background: $color4;
+        box-sizing: border-box;
+        padding: 116px 95px;
+        @include breakmax($desktop-s){
+            padding: 85px 75px;
+        }
+        @include breakmax($mobile){
+            width: 320px;
+            padding: 95px 25px;
+        }
+    }
+}
+
+
+.teams{
+    .slick-list.draggable{
+        padding: 0 !important; // shame
+    }
+    .teams__text{
+        height: 100%;
+        .slick-list{
+            height: 100%;
+        }
+        .slick-track{
+            height: 100%;
+        }
+    }
+    .teams__images{
+        height: 100%;
+        .slick-list.draggable{
+            height: 100%;
+        }
+        .slick-track{
+            height: 100%;
+        }
+    }
+}
+
+.teams-dots{
+    position: absolute;
+    @include displayFlex; 
+    left: 85px;
+    bottom: 55px;
+    flex-wrap: wrap;
+    @include breakmax($desktop-s){
+        left: 65px;
+        bottom: 30px;
+    }
+    @include breakmax($mobile){
+        top: 30px;
+        left: 69px;
+        width: 190px;
+        bottom: initial;
+    }
+    button{
+        background: none;
+        border: none;
+        visibility: hidden;
+        &:before{
+            visibility: initial;
+            content: url($directory-img + 'dot.svg');
+        }
+    }
+    .slick-active{
+        button{
+            &:before{
+                visibility: initial;
+                content: url($directory-img + 'dotactive.svg');
+            }
+        }
+    }
+}

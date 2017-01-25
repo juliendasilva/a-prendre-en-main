@@ -1,5 +1,5 @@
 .approach{
-    display: flex;
+    @include displayFlex();  
     width: 970px;
     margin: auto;
     margin-bottom: 269px;

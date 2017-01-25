@@ -1,5 +1,5 @@
 .numbers{
-    display: flex;
+    @include displayFlex; 
     justify-content: space-between;
     width: 950px;
     margin: auto;

@@ -65,7 +65,7 @@
 .someWord{
     .someWord__numbers {
         .text {
-            display: flex;
+            @include displayFlex; 
             margin-bottom: 88px;
             &:last-child {
                 margin-bottom: 0;
@@ -99,6 +99,40 @@
             font-size: 16px;
             color: $color6;
             line-height: 28px;
+        }
+    }
+}
+
+.teams{
+    .teams__name{
+        font-family: $font4;
+        margin-bottom: 24px;
+        color: $color2;
+        font-size: 64px;
+
+    }
+    .descriptions{
+        font-family: $font1;
+        font-size: 16px;
+        color: $color2;
+        line-height: 24px;
+    }
+}
+
+.news{
+    .date{
+        font-family: $font1;
+        color: $color4;
+        font-size: 11px;
+        margin-bottom: 17px;
+    }
+    .text{
+        font-family: $font1;
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 33px;
+        @include breakmax($mobile){
+            margin-bottom: 15px;
         }
     }
 }

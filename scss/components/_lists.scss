@@ -24,3 +24,11 @@
         }
     }
 }
+
+.partenaires{
+    .lists{
+        @include displayFlex();
+        justify-content: space-between;
+        width: 100%;
+    }
+}
