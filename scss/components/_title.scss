@@ -6,5 +6,8 @@
         font-size: 45px;
         width: 405px;
         margin-bottom: 27px;
+        @include breakmax($desktop-s){
+            width: 100%;
+        }
     }
 }

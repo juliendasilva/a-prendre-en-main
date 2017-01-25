@@ -4,5 +4,14 @@
         margin-top: 103px;
         width: 50%;
         height: 100%;
+        @include breakmax($desktop-s){
+            margin-right: 37px;
+        }
+        @include breakmax($tablet){
+            margin-right: 4%;
+            margin: 0;
+            width: 260px;
+            margin-bottom: 35px;
+        }
     }
 }

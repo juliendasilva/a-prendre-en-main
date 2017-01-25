@@ -2,6 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakmax($desktop-s){
+        flex-direction: column;
+    }
+    @include breakmax($tablet){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @include breakmax($mobile){
+        align-items: center;
+    }
     .button {
         background-color: $color4;
         font-family: $font1;
@@ -13,6 +23,13 @@
         width: 197px;
         height: 44px;
         border-radius: 35px;
+        @include breakmax($desktop-s){
+            margin-bottom: 25px;
+        }
+        @include breakmax($tablet){
+            margin-bottom: 25px;
+        }
+
     }
     .info{
         font-family: $font2;

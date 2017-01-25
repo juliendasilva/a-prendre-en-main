@@ -9,13 +9,12 @@
 }
 
 .funding__content{
-    display: flex;
-    justify-content: space-between;
     .text{
         font-family: $font3;
         font-size: 23px;
         color: $color2;
         width: 215px;
+        margin-bottom: 25px;
     }
     .value{
         color: $color4;
