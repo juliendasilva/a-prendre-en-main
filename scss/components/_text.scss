@@ -1,0 +1,25 @@
+.fundingText{
+    margin-bottom: 52px;
+    .text{
+        font-family: $font1;
+        color: $color2;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.funding__content{
+    display: flex;
+    justify-content: space-between;
+    .text{
+        font-family: $font3;
+        font-size: 23px;
+        color: $color2;
+        width: 215px;
+    }
+    .value{
+        color: $color4;
+        font-size: 64px;
+        font-family: $font1;
+    }
+}
