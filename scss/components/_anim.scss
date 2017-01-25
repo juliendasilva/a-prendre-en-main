@@ -47,7 +47,8 @@
 
 .dialogue p{
     font-size: 23px;
-    font-family: 'Indie Flower', cursive;
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family:sans-serif;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -111,12 +112,14 @@
     bottom:22%;
     /*border:2px solid;*/
     width: 13%;
+    max-width: 150px;
 }
 
 #puit{
     bottom:18%;
     z-index:99;
     width:30%;
+    max-width: 400px;
 }
 #big-tree{
     opacity: 1;
