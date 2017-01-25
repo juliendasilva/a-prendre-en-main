@@ -33,16 +33,19 @@
 
 #article-h3 {
   font-size: 32px;
-  color: #FFFFFF;
+  color: $color2;
   width: 220px;
   margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 49px;
 }
 
 #article-h4 {
-  color: #FFFFFF;
+  color: $color2;
   opacity: 0.7;
   margin: 0 auto;
   font-size: 24px;
+  padding-bottom: 78px;
 }
 
 #article-button {
@@ -51,4 +54,5 @@
   border: none;
   padding: 15px 30px;
   border-radius: 20px;
+  padding-bottom: 96px;
 }
