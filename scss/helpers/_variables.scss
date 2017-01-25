@@ -1,18 +1,22 @@
 // color
-$color1: #000000;
-$color2: #ffffff;
-$color3: #F1C5A5;
+$color1: #000000; // black
+$color2: #ffffff; // white
+$color3: #F1C5A5; // beige
+$color4: #5FBF84; // green
 
 // fonts
 $directory-fonts : '../fonts/';
-//$font1: 'Futura-medium';
+$font1: 'BentonSans';
+$font2: 'BentonSans-Light';
+$font3: 'BentonSans-Bold';
+$font4: 'Besom';
 
 // img
 $directory-img: '../images/';
 
 // responsive size
 $mobile: 480px;
-$tablet: 769px;
+$tablet: 768px;
 $desktop-s: 1080px;
 $desktop: 1440px;
 $desktop-l: 1600px;

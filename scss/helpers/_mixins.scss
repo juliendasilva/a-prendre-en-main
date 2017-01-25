@@ -22,7 +22,7 @@
 
 // breakmax: Défini un responsive max
 // $size: La taille à laquelle le responsive va s'éffectuer
-@mixin breakmin($size) {
+@mixin breakmax($size) {
     @media all and (max-width: $size) {
         @content;
     }
