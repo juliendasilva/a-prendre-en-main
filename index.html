@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-du-soir</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fixed-positioning.css">
+</head>
+<body>
+
+	<!-- main-header a une height de 1000px -->
+	<div id="main-header" 
+		data-_title_animation-0="display:block; position:fixed; top:0" 
+		data-_title_animation-400="top:0px" 
+		data-_title_animation-600="top:-1000px" 
+		data-_title_animation-800="opacity:1" 
+		data-_title_animation-900="opacity:0" 
+		data-_title_animation-1000="display:none;"
+	>
+	<!-- au dessus : le dernier -> data-_title_animation-1000 servait a placer un "display:none". Actuellement cela fait un porbleme de blanc en bas de page... a résoudre. -->
+
+		<header>
+			<div id="wrapper-main-title" >
+				<p id="scroll-intro">Scroll to the bottom ..</p>
+				<h1 data-_title_animation-0="opacity:0" data-_title_animation-300="opacity:1">
+					<img src="images/title.svg" alt="" >
+				</h1>	
+			</div>
+			<div id="leafs">
+					<div class="leaf1">
+						<img src="images/leaf-left.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(-100deg); left:-600px; top:-200px" data-_title_animation-350="transform:rotate(-100deg); left:-800px; top:-300px" >
+					</div>
+					<div class="leaf2">
+						<img src="images/leaf-right.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(100deg); left:600px; top:-200px" data-_title_animation-350="transform:rotate(100deg); left:800px; top:-300px">
+					</div>
+			</div>
+		</header>
+	</div>
+
+	<!-- On commence l'animation en "écoutant" le scroll a partir de 1000px de base. -->
+	<div class="animation" style="background:pink; height:20000px; width:100%">
+		<!-- Ici s'affiche les images et blocs de texte en fonciton du scroll -->
+
+		<div class="text"  data-_main_animation-0="display:none;" data-_main_animation-300="display:block; opacity:0; left:-5%" data-_main_animation-1000="display:block; opacity:1; left:10%" data-_main_animation-3000="opacity:1; left:50%; top:30px" data-_main_animation-5500="opacity:0; top:-150%">
+			<p>Un enfant habitant de Douala va chercher son eau au puit. </p>
+		</div>
+
+		<img id = "girl" src = "images/girl.png" 
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-1000="display:block; opacity:1; right:-5%" 
+			data-_main_animation-3000="opacity:1; right:50%" 
+			data-_main_animation-16000=""
+			data-_main_animation-18000="right:100%" >
+
+		<div class="text"  
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-3900="display:block; opacity:1; left:-5%" 
+			data-_main_animation-6000="opacity:1; left:50%; top:30px" 
+			data-_main_animation-8000="opacity:0; top:-150%">
+			<p> Autre texte ........ </p>
+		</div>
+
+		<img id = "kanji1" src = "images/iku.jpeg"  
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-5000="display:block; opacity:1; right:-5%" 
+			data-_main_animation-10700="opacity:1; right:100%" >
+		<!-- <img id = "kanji3" src = "images/fire.jpeg" data-_main_animation-0="display:none;" data-_main_animation-2900="display:block; opacity:1; right:-5%" data-_main_animation-8200="opacity:1; right:120%" ><
+		<img id = "kanji4" src = "images/ai.jpg" data-_main_animation-0="display:none;" data-_main_animation-6000="display:block; opacity:1; right:-5%" data-_main_animation-7400="opacity:1; right:120%" >
+		<img id = "kanji5" src = "images/toki.jpg" data-_main_animation-0="display:none;" data-_main_animation-6800="display:block; opacity:1; right:-5%" data-8700="opacity:1; right:100%" > -->
+	</div>
+
+	<div class="bottom" style="background:yellow; height:5000px; width:100%;">
+		<footer></footer>
+	</div>
+
+
+	<script src="js/skrollr.min.js"></script>
+	<script>
+		var s = skrollr.init({
+			constants:{
+				title_animation:0,
+				main_animation:600
+			}
+		});
+	</script>
+</body>
+</html>
