@@ -61,3 +61,44 @@
         line-height: 24px;
     }
 }
+
+.someWord{
+    .someWord__numbers {
+        .text {
+            display: flex;
+            margin-bottom: 88px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include breakmax($desktop-s){
+                margin-bottom: 28px;
+            }
+        }
+        .number {
+            font-family: $font4;
+            color: $color4;
+            font-size: 64px;
+        }
+        .textContent {
+            font-family: $font1;
+            font-size: 23px;
+            color: $color4;
+            line-height: 24px;
+        }
+    }
+    .textContainer{
+        .text{
+            font-family: $font1;
+            font-size: 16px;
+            color: $color1;
+            margin-bottom: 25px;
+            line-height: 24px;
+        }
+        .quote{
+            font-family: $font1;
+            font-size: 16px;
+            color: $color6;
+            line-height: 28px;
+        }
+    }
+}

@@ -2,8 +2,12 @@
     display: flex;
     width: 970px;
     margin: auto;
+    margin-bottom: 269px;
     @include breakmax($desktop-s){
         width: 90%;
+    }
+    @include breakmax($tablet){
+        margin-bottom: 60px;
     }
     @include breakmax($mobile){
         flex-direction: column;
