@@ -14,15 +14,6 @@
 @import "components/anim";
 @import "components/fixed-positioning";
 
-// Components
-@import "components/title";
-@import "components/text";
-@import "components/image";
-@import "components/button";
-@import "components/lists";
-@import "components/sliders";
-@import "components/link";
-
 // Layout
 @import "layout/containerInfo";
 @import "layout/funding";
@@ -34,6 +25,15 @@
 @import "layout/partenaires";
 @import "layout/news";
 @import "layout/footer";
+
+// Components
+@import "components/title";
+@import "components/text";
+@import "components/image";
+@import "components/button";
+@import "components/lists";
+@import "components/sliders";
+@import "components/link";
 
 // Pages
 @import "pages/_article.scss";
