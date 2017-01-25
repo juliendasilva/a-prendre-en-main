@@ -6,109 +6,112 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<!--<link rel="stylesheet" href="css/reset.css">-->
 	<!--<link rel="stylesheet" href="css/fixed-positioning.css">-->
-	<link rel="stylesheet" href="lib/slick-1.6.0/slick/slick.css">
 	<link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
 
 	<!-- main-header a une height de 1000px -->
-	<!--<div id="main-header" -->
-		<!--data-_title_animation-0="display:block; position:fixed; top:0" -->
-		<!--data-_title_animation-400="top:0px" -->
-		<!--data-_title_animation-600="top:-1000px" -->
-		<!--data-_title_animation-800="opacity:1"-->
-		<!--data-_title_animation-900="opacity:0" -->
-		<!--data-_title_animation-1000="display:none;"-->
-	<!--&gt;-->
-	<!--&lt;!&ndash; au dessus : le dernier -> data-_title_animation-1000 servait a placer un "display:none". Actuellement cela fait un porbleme de blanc en bas de page... a résoudre. &ndash;&gt;-->
+	<div id="main-header" 
+		data-_title_animation-0="display:block; position:fixed; top:0" 
+		data-_title_animation-400="top:0px" 
+		data-_title_animation-600="top:-1000px" 
+		data-_title_animation-800="opacity:1"
+		data-_title_animation-900="opacity:0" 
+		data-_title_animation-1000="display:none;"
+	>
+	<!-- au dessus : le dernier -> data-_title_animation-1000 servait a placer un "display:none". Actuellement cela fait un porbleme de blanc en bas de page... a résoudre. -->
 
-		<!--<header>-->
-			<!--<div id="wrapper-main-title" >-->
-				<!--<p id="scroll-intro">Scroll to the bottom ..</p>-->
-				<!--<h1 data-_title_animation-0="opacity:0" data-_title_animation-300="opacity:1">-->
-					<!--<img src="dist/images/title.svg" alt="" >-->
-				<!--</h1>	-->
-			<!--</div>-->
-			<!--<div id="leafs">-->
-					<!--<div class="leaf1">-->
-						<!--<img src="dist/images/leaf-left.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(-100deg); left:-600px; top:-200px" data-_title_animation-350="transform:rotate(-100deg); left:-800px; top:-300px" >-->
-					<!--</div>-->
-					<!--<div class="leaf2">-->
-						<!--<img src="dist/images/leaf-right.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(100deg); left:600px; top:-200px" data-_title_animation-350="transform:rotate(100deg); left:800px; top:-300px">-->
-					<!--</div>-->
-			<!--</div>-->
-		<!--</header>-->
-	<!--</div>-->
+		<header>
+			<div id="wrapper-main-title" >
+				<p id="scroll-intro">Scroll to the bottom ..</p>
+				<h1 data-_title_animation-0="opacity:0" data-_title_animation-300="opacity:1">
+					<img src="dist/images/title.svg" alt="" >
+				</h1>	
+			</div>
+			<div id="leafs">
+					<div class="leaf1">
+						<img src="dist/images/leaf-left.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(-100deg); left:-600px; top:-200px" data-_title_animation-350="transform:rotate(-100deg); left:-800px; top:-300px" >
+					</div>
+					<div class="leaf2">
+						<img src="dist/images/leaf-right.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(100deg); left:600px; top:-200px" data-_title_animation-350="transform:rotate(100deg); left:800px; top:-300px">
+					</div>
+			</div>
+		</header>
+	</div>
 
-	<!--&lt;!&ndash; On commence l'animation en "écoutant" le scroll a partir de 1000px de base. &ndash;&gt;-->
-	<!--<div class="animation" style="background:#F1C5A5; height:60000px; width:100%">-->
-		<!--&lt;!&ndash; Ici s'affiche les images et blocs de texte en fonciton du scroll &ndash;&gt;-->
-	<!---->
-		<!--&lt;!&ndash; On affiche le decors &ndash;&gt;-->
-		<!--&lt;!&ndash; Back road &ndash;&gt;-->
-		<!--&lt;!&ndash; <div class="back-road"-->
-			<!--data-0="display:none" -->
-			<!--data-_main_animation-0="display:block; bottom:-10%"-->
-			<!--data-_main_animation-1000="display:block; bottom:0%"-->
-			<!--data-_main_animation-50000="opacity:1"-->
-			<!--data-_main_animation-58000="opacity:0"-->
-			<!--style="background:#F0EBDE; width: 100%; height:450px; z-index:1">-->
-		<!--</div> &ndash;&gt;-->
-		<!--&lt;!&ndash; road&ndash;&gt;-->
-		<!--<div>-->
-			<!--<img src="dist/images/ground.gif" alt=""-->
-			<!--data-0= "display:none"-->
-			<!--data-_main_animation-0="display:block; bottom:-50%"-->
-			<!--data-_main_animation-3000="display:block; bottom:0%"-->
-			<!--data-_main_animation-50000="opacity:1"-->
-			<!--data-_main_animation-58000="opacity:0"-->
-			<!--style=" width: 100%; z-index:1; ">-->
-		<!--</div>-->
+	<!-- On commence l'animation en "écoutant" le scroll a partir de 1000px de base. -->
+	<div class="animation" style="background:#F1C5A5; height:60000px; width:100%">
+		<!-- Ici s'affiche les images et blocs de texte en fonciton du scroll -->
+	
+		<!-- On affiche le decors -->
+		<!-- Back road -->
+		<!-- <div class="back-road"
+			data-0="display:none" 
+			data-_main_animation-0="display:block; bottom:-10%"
+			data-_main_animation-1000="display:block; bottom:0%"
+			data-_main_animation-50000="opacity:1"
+			data-_main_animation-58000="opacity:0"
+			style="background:#F0EBDE; width: 100%; height:450px; z-index:1">
+		</div> -->
+		<!-- road-->
+		<div>
+			<img src="dist/images/ground.gif" alt=""
+			data-0= "display:none"
+			data-_main_animation-0="display:block; bottom:-50%"
+			data-_main_animation-3000="display:block; bottom:0%"
+			data-_main_animation-15500="opacity:1"
+			data-_main_animation-16500="opacity:0"
+			style=" width: 100%; z-index:1; ">
+		</div>
 
-		<!--&lt;!&ndash; On affiche les anims &ndash;&gt;-->
+		<!-- On affiche les anims -->
 
-		<!--&lt;!&ndash; building image &ndash;&gt;-->
-	<!---->
-			<!--<img id="building"-->
-				<!--data-0="display:none" -->
-				<!--data-_main_animation-2000="display:block; right:-5%"-->
-				<!--data-_main_animation-4000="right:80%"-->
-				<!--data-_main_animation-50000="opacity:1"-->
-				<!--data-_main_animation-58000="opacity:0"-->
-				<!--style="height:98px; width:20%; bottom:54%; z-index:1" src="dist/images/building.png" alt="" />-->
+		<!-- building image -->
+	
+			<img id="building"
+				data-0="display:none" 
+				data-_main_animation-3000="display:block; left:15%; opacity:0"
+				data-_main_animation-4000="opacity:1"
+				data-_main_animation-15500="opacity:1"
+				data-_main_animation-16500="opacity:0"
+				
+				style="height:98px; width:20%; bottom:52%; z-index:1" src="dist/images/building.png" alt="" />
 
 
-		<!--<div class="dialogue"  data-_main_animation-0="display:none;" data-_main_animation-300="display:block; opacity:0; left:-5%" data-_main_animation-1000="display:block; opacity:1; left:10%" data-_main_animation-7000="opacity:1; left:50%; top:30px" data-_main_animation-15500="opacity:0; top:-150%">-->
-			<!--<p>Un enfant habitant de Douala va chercher son eau au puit. </p>-->
-		<!--</div>-->
+		<div class="dialogue"  data-_main_animation-0="display:none;" data-_main_animation-300="display:block; opacity:0; left:-5%" data-_main_animation-1000="display:block; opacity:1; left:10%" data-_main_animation-7000="opacity:1; left:50%; top:30px" data-_main_animation-15500="opacity:0; top:-150%">
+			<p>Un enfant habitant de Douala va chercher son eau au puit. </p>
+		</div>
 
-		<!--<img id = "girl" src = "dist/images/girl.png" -->
-			<!--data-_main_animation-0="display:none;" -->
-			<!--data-_main_animation-1000="display:block; opacity:1; right:-5%" -->
-			<!--data-_main_animation-3000="opacity:1; right:65%" -->
-			<!--data-_main_animation-50000="opacity:1"-->
-			<!--data-_main_animation-57000="opacity:0" >-->
+		<img id = "girl" src = "dist/images/fillelette.png" 
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-3000="display:block; opacity:1; left:-25%" 
+			data-_main_animation-5000="opacity:1; left:11%" 
+			data-_main_animation-7800=""
+			data-_main_animation-9300="left:35%"
+			data-_main_animation-15500="opacity:1"
+			data-_main_animation-16500="opacity:0">
 
-		<!--<div class="dialogue"  -->
-			<!--data-_main_animation-0="display:none;" -->
-			<!--data-_main_animation-19000="display:block; opacity:1; left:-5%" -->
-			<!--data-_main_animation-31000="opacity:1; left:50%; top:30px" -->
-			<!--data-_main_animation-50000="opacity:0; top:-150%">-->
-			<!--<p> Autre texte ........ </p>-->
-		<!--</div>-->
+		<img id = "puit" src = "dist/images/puit.png"  
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-5000="display:block; opacity:1; right:-5%" 
+			data-_main_animation-7300="opacity:1; right:20%" 
+			data-_main_animation-15500="opacity:1"
+			data-_main_animation-16500="opacity:0">
 
-		<!--<img id = "kanji1" src = "dist/images/iku.jpeg"  -->
-			<!--data-_main_animation-0="display:none;" -->
-			<!--data-_main_animation-5000="display:block; opacity:1; right:-5%" -->
-			<!--data-_main_animation-10700="opacity:1; right:100%" >-->
-		<!--&lt;!&ndash; <img id = "kanji3" src = "dist/images/fire.jpeg" data-_main_animation-0="display:none;" data-_main_animation-2900="display:block; opacity:1; right:-5%" data-_main_animation-8200="opacity:1; right:120%" ><-->
-		<!--<img id = "kanji4" src = "dist/images/ai.jpg" data-_main_animation-0="display:none;" data-_main_animation-6000="display:block; opacity:1; right:-5%" data-_main_animation-7400="opacity:1; right:120%" >-->
-		<!--<img id = "kanji5" src = "dist/images/toki.jpg" data-_main_animation-0="display:none;" data-_main_animation-6800="display:block; opacity:1; right:-5%" data-8700="opacity:1; right:100%" > &ndash;&gt;-->
-	<!--</div>-->
+	</div>
+	<!-- FIN DE LA PARTIE 1 -->
+	<!-- DEBUT DE LA PARTIE 2 -->
+	<div class="dialogue"  
+			data-_main_animation-0="display:none;" 
+			data-_main_animation-19000="display:block; opacity:1; left:-5%" 
+			data-_main_animation-31000="opacity:1; left:50%; top:30px" 
+			data-_main_animation-50000="opacity:0; top:-150%">
+			<p> Autre texte ........ </p>
+	</div>
 
 	<div class="containerInfo">
 		<section class="funding">
-			<img src="dist/images/women.png" alt="women" class="img">
+			<img src="dist/images/women.png" alt="women">
 			<div class="fundingText">
 				<h2 class="title">Aidez nous à financer le projet</h2>
 				<p class="text">Nous cherchons 23 638 € pour financer le projet, et ce pour qu’il voit le jour en octobre 2017. Cette somme comprend les différents travaux de forage, l’équipement, la formation du comité local, la formation de la population, les dépliants de sensibilisation notamment. Chaque don est important ! </p>
@@ -126,168 +129,9 @@
 			</div>
 		</section>
 		<div class="degraded"></div>
-		<div class="degraded--end">
-			<section class="explications">
-				<div class="imageContainer">
-					<img src="dist/images/approvisionnement.png" alt="approvisionnement">
-				</div>
-				<article class="textContainer">
-					<div class="content">
-						<h2 class="title">Approvisionnement en eau potable <span class="ville">Douala- PK11 (Cameroun)</span></h2>
-						<p class="text">
-							Selon l’Organisation Mondiale de la Santé plus de 60% de la population africaine n’a pas accès à l’eau potable. Pour notre premier projet, nous voulons implanter deux pompes à eau dans une localité au Cameroun, où le besoin est particulièrement préoccupant. En effet, dans la commune de Douala – PK11, quartier de Douala, composé environ de de 5000 habitants, 80% des habitants ne sont pas connectés au réseau de distribution d’eau potable.
-
-							Pour couvrir leur besoin en eau, certains habitants n’ont pas d’autre choix que de se ravitailler auprès de sources d’eau impropres à la consommation. C’est la source de plusieurs maladies hydriques rencontrées localement telles que la dysenterie amibienne, le choléra, la typhoïde etc.
-						</p>
-						<h3 class="subtitle">Le projet d’approvisionnement en eau potable permettra :</h3>
-						<ul class="list">
-							<li>aux habitants de vivre dans de meilleures conditions en réduisant les risques d’apparition et de propagation de maladies d’origine hydrique.</li>
-							<li>aux jeunes enfants, sur qui repose la tâche de la collecte de l’eau, de consacrer plus de temps à leurs études.</li>
-							<li>aux femmes de pouvoir mener une activité économique (vente de denrées alimentaires).</li>
-						</ul>
-					</div>
-				</article>
-			</section>
-			<section class="numbers">
-				<div class="numbersItem">
-					<img src="dist/images/img-test-chiffres.png" alt="img-test">
-					<p class="number">2</p>
-					<p class="text">pompes à eau</p>
-				</div>
-				<div class="numbersItem">
-					<img src="dist/images/img-test-chiffres.png" alt="img-test">
-					<p class="number">10</p>
-					<p class="text">litres d’eau par jour et par personne</p>
-				</div>
-				<div class="numbersItem">
-					<img src="dist/images/img-test-chiffres.png" alt="img-test">
-					<p class="number">2133</p>
-					<p class="text">volontaires</p>
-				</div>
-			</section>
-			<section class="someWord">
-				<div class="numbers">
-					<p class="text">
-						<span class="number">60 %</span>
-						de la population africaine n’a pas accès à l’eau potable
-					</p>
-					<p class="text">
-						<span class="number">35 %</span>
-						des habitants du Cameroun n’ont pas accès à l’eau potable
-					</p>
-				</div>
-				<article class="text">
-					<h2 class="title">L’association en quelques mots</h2>
-					<p class="text">
-						A-Prendre en main est une association de loi 1901 dont l’objet est de promouvoir et soutenir l’aide au développement économique et social des populations défavorisées en prônant leur —autonomie—. Les projets menés auront pour ambition de favoriser l’éducation des jeunes et/ou de participer à l’essor socio-économique des populations. Elle a été créée en Janvier 2016 à l’initiative de Loïc Basseeck, Cédric Tchamen et Fabien Buchet.
-
-						« Tout est parti d’un projet de voyage en 2014 à Douala (Cameroun) : Fabien et moi avions 46 kg de bagages non utilisés. Cela nous a donné l’idée de collecter des fournitures scolaires à Paris afin de les distribuer à des jeunes de Douala. Nous ne pensions pas avoir un tel impact. Les sourires des jeunes rencontrés nous ont donné la volonté d’en faire plus. Après plus d’une année d’hésitation et discussion, nous décidons avec Cédric de créer une association. Celle-ci a pour vocation de donner à des jeunes, issus de milieux défavorisés, les moyens de disposer de leur destin. » – Loïc
-					</p>
-				</article>
-			</section>
-			<section class="teams">
-				<div class="teams__text">
-					<div>
-						<p class="title__little">Notre équipe</p>
-						<p class="teams__name">Anaelle</p>
-						<p class="descriptions">
-							Idéaliste par essence, elle quitte son Cameroun natal avec un seul objectif: devenir une femme aux services des autres. A cette fin, elle entreprend des études en sciences sociales et en gestion pour mieux comprendre l’Homme et ses interactions avec le monde qui l’entoure. Ses diplômes en main, elle intègre un Grand Cabinet de Conseil pour œuvrer dans le milieu associatif. Aujourd’hui contrôleur de gestion, elle reste très attachée au monde associatif. Et c’est tout naturellement qu’elle rejoint l’équipe d’A prendre en main en Mai 2016. Poursuivant ainsi sa marche vers son Idéal.
-						</p>
-					</div>
-					<div>
-						<p class="title__little">Notre équipe</p>
-						<p class="teams__name">Anaelle</p>
-						<p class="descriptions">
-							Idéaliste par essence, elle quitte son Cameroun natal avec un seul objectif: devenir une femme aux services des autres. A cette fin, elle entreprend des études en sciences sociales et en gestion pour mieux comprendre l’Homme et ses interactions avec le monde qui l’entoure. Ses diplômes en main, elle intègre un Grand Cabinet de Conseil pour œuvrer dans le milieu associatif. Aujourd’hui contrôleur de gestion, elle reste très attachée au monde associatif. Et c’est tout naturellement qu’elle rejoint l’équipe d’A prendre en main en Mai 2016. Poursuivant ainsi sa marche vers son Idéal.
-						</p>
-					</div>
-					<div>
-						<p class="title__little">Notre équipe</p>
-						<p class="teams__name">Anaelle</p>
-						<p class="descriptions">
-							Idéaliste par essence, elle quitte son Cameroun natal avec un seul objectif: devenir une femme aux services des autres. A cette fin, elle entreprend des études en sciences sociales et en gestion pour mieux comprendre l’Homme et ses interactions avec le monde qui l’entoure. Ses diplômes en main, elle intègre un Grand Cabinet de Conseil pour œuvrer dans le milieu associatif. Aujourd’hui contrôleur de gestion, elle reste très attachée au monde associatif. Et c’est tout naturellement qu’elle rejoint l’équipe d’A prendre en main en Mai 2016. Poursuivant ainsi sa marche vers son Idéal.
-						</p>
-					</div>
-				</div>
-				<div class="teams__images">
-					<img src="dist/images/teams-annaelle.png" alt="">
-					<img src="dist/images/fujisan.png" alt="">
-					<img src="dist/images/girl.png" alt="">
-				</div>
-			</section>
-			<section class="news">
-				<h2 class="title"></h2>
-				<div class="content">
-					<div class="contentItem">
-						<p class="date">16 OCTOBRE 2017</p>
-						<h3 class="titleArticle">
-							L’installation des pompes avance
-						</h3>
-						<p class="text">
-							Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations. Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations.
-						</p>
-						<a href="">Lire la suite</a>
-					</div>
-					<div class="contentItem">
-						<p class="date">16 OCTOBRE 2017</p>
-						<h3 class="titleArticle">
-							L’installation des pompes avance
-						</h3>
-						<p class="text">
-							Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations. Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations.
-						</p>
-						<a href="">Lire la suite</a>
-					</div>
-					<div class="contentItem">
-						<p class="date">16 OCTOBRE 2017</p>
-						<h3 class="titleArticle">
-							L’installation des pompes avance
-						</h3>
-						<p class="text">
-							Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations. Par la suite, 2 membres de l’association se rendront sur place le 16 octobre 2017 (2 semaines avant l’ouverture des pompes à eau) pour suivre les travaux (durée de 10 jours) et dispenser les formations.
-						</p>
-						<a href="">Lire la suite</a>
-					</div>
-				</div>
-			</section>
-			<section class="partenaires">
-				<h2>Partenaires</h2>
-				<ul class="lists">
-					<li><img src="dist/images/partner-1.svg" alt="partenaire 1"></li>
-					<li><img src="dist/images/partner-2.svg" alt="partenaire 2"></li>
-					<li><img src="dist/images/partner-3.svg" alt="partenaire 3"></li>
-				</ul>
-			</section>
-		</div>
-		<section class="contact">
-			<img src="dist/images/img-test.svg" alt="img-test">
-			<h2 class="title__contact">Prenez contact avec nous</h2>
-		</section>
-		<footer class="footer">
-			<div class="missions">
-				<h4 class="footer__title">Notre mission</h4>
-				<p class="footer__text">
-					A-Prendre en main est une association de loi 1901 dont l’objet est de promouvoir et soutenir l’aide au développement économique et social des populations défavorisées en prônant leur autonomie.
-				</p>
-			</div>
-			<div class="contacter">
-				<h4 class="footer__title">Nous contacter</h4>
-				<p class="text">
-					Adresse-mail : <span>a.prendre.en.main@gmail.com</span>
-					Téléphone : <span>06 24 11 93 26</span>
-				</p>
-			</div>
-			<div class="reseauxSociaux">
-				<h4 class="footer__title">Nous suivre</h4>
-				<ul>
-					<li><img src="dist/images/fb.svg" alt="fb"></li>
-				</ul>
-			</div>
-		</footer>
 	</div>
 
-	<script src="lib/jquery-3.1.1.min.js"></script>
-	<script src="lib/slick-1.6.0/slick/slick.js"></script>
+
 	<script src="js/skrollr.min.js"></script>
 	<script>
 		var s = skrollr.init({
@@ -297,6 +141,5 @@
 			}
 		});
 	</script>
-	<script src="js/sliders.js"></script>
 </body>
 </html>
