@@ -1,0 +1,6 @@
+.content-center{
+    @include breakmin($desktop){
+        width: 1440px;
+        margin: auto;
+    }
+}

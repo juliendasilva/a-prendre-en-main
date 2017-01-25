@@ -1,0 +1,20 @@
+.explanation{
+    @include displayFlex();
+    margin-bottom: 216px;
+    .textContainer{
+        background-color: $color4;
+        width: 850px;
+        padding: 90px;
+        @include breakmax($desktop-s){
+            padding: 6%;
+        }
+        @include breakmax($tablet){
+            width: 100%;
+            padding: 35px 65px;
+            box-sizing: border-box;
+        }
+        @include breakmax($mobile){
+            padding: 35px 35px;
+        }
+    }
+}

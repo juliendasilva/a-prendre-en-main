@@ -1,7 +1,24 @@
 .funding{
-    display: flex;
+    @include displayFlex();
+    @include breakmax($tablet){
+        flex-direction: column;
+        @include alignItem();
+    }
 }
 
 .fundingText{
     width: 40%;
+    @include breakmax($tablet){
+        width: 80%;
+    }
+}
+
+.funding__content{
+    @include displayFlex();
+    justify-content: space-between;
+    @include breakmax($mobile){
+        flex-direction: column;
+        @include alignItem();
+        margin-bottom: 35px;
+    }
 }
