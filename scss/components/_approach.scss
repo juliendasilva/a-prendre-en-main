@@ -2,11 +2,26 @@
     display: flex;
     width: 970px;
     margin: auto;
+    @include breakmax($desktop-s){
+        width: 90%;
+    }
+    @include breakmax($mobile){
+        flex-direction: column;
+    }
     .textContainer{
         width: 50%;
         margin-right: 145px;
+        @include breakmax($tablet){
+            margin-right: 125px;
+        }
+        @include breakmax($mobile){
+            margin: 0;
+            width: 100%;
+        }
     }
     .activities{
-        width: 30%;
+        @include breakmax($mobile){
+            width: 100%;
+        }
     }
 }
