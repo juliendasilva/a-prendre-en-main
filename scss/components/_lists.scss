@@ -24,3 +24,31 @@
         }
     }
 }
+
+.partenaires{
+    .lists{
+        @include displayFlex();
+        justify-content: space-between;
+        width: 100%;
+        @include breakmax($desktop-s){
+            width: 80%;
+            margin: auto;
+        }
+        @include breakmax($tablet){
+            width: 100%;
+        }
+        @include breakmax($mobile){
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            @include breakmax($mobile){
+                margin-bottom: 25px;
+            }
+            img{
+                width: 130px;
+                height: 55px;
+            }
+        }
+    }
+}

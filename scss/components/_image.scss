@@ -21,8 +21,8 @@
         flex-direction: column;
     }
     .imageContainer {
-        display: flex;
-        align-items: center;
+        @include displayFlex; 
+        @include alignItem();
         padding: 95px 35px;
         width: 60%;
         @include breakmax($desktop-s){
@@ -49,6 +49,14 @@
         padding: 60px 55px;
         @include breakmax($desktop-s){
             padding: 6%;
+        }
+    }
+}
+
+.teams{
+    .teams__images{
+        .slick-slide{
+            height: 100%;
         }
     }
 }

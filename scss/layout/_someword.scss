@@ -1,0 +1,44 @@
+.someWord{
+    @include displayFlex; 
+    width: 970px;
+    margin: auto;
+    margin-bottom: 177px;
+    @include breakmax($desktop-s){
+        width: 720px;
+        display: block;
+    }
+    @include breakmax($tablet){
+        flex-direction: column;
+        @include displayFlex; 
+        width: 90%;
+    }
+    .someWord__numbers{
+        width: 40%;
+        padding-right: 121px;
+        padding-top: 55px;
+        padding-left: 45px;
+        background-image: url($directory-img + 'association-someWord.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        @include breakmax($desktop-s){
+            float: right;
+            padding: 55px 25px;
+        }
+        @include breakmax($tablet){
+            width: 100%;
+            margin-bottom: 45px;
+            padding: 80px 0px;
+            float: initial;
+            background-size: 100%;
+        }
+        @include breakmax($mobile){
+            padding: 10px 0;
+        }
+    }
+    .textContainer{
+        width: 50%;
+        @include breakmax($desktop-s){
+            width: 100%;
+        }
+    }
+}

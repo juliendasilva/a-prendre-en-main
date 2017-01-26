@@ -1,0 +1,10 @@
+.partenaires{
+    @include displayFlex();
+    width: 940px;
+    margin: auto;
+    margin-bottom: 233px;
+    @include breakmax($desktop-s){
+        width: 90%;
+        flex-direction: column;
+    }
+}

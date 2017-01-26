@@ -1,0 +1,27 @@
+.news{
+    margin-bottom: 283px;
+    @include breakmax($mobile){
+        margin-bottom: 83px;
+    }
+    .content{
+        @include displayFlex;
+        width: 1083px;
+        margin: auto;
+        justify-content: space-between;
+        @include breakmax($desktop-s){
+            width: 90%;
+        }
+        @include breakmax($mobile){
+            flex-direction: column;
+        }
+    }
+    .contentItem{
+        width: 30%;
+        @include breakmax($desktop-s){
+            width: 100%;
+        }
+        @include breakmax($mobile){
+            margin-bottom: 80px;
+        }
+    }
+}

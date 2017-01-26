@@ -1,0 +1,30 @@
+.footer{
+    background: $color7;
+    .wrapper{
+        font-family: $font1;
+        color: $color4;
+        @include displayFlex();
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 76px;
+        padding-bottom: 174px;
+        width: 90%;
+        @include breakmax($mobile){
+            flex-direction: column;
+            padding-bottom: 5px;
+        }
+    }
+    .footer__item{
+        width: 350px;
+        &:last-child{
+            width: initial;
+        }
+        @include breakmax($desktop-s){
+            width: 220px;
+        }
+        @include breakmax($mobile){
+            width: 100%;
+            margin-bottom: 55px;
+        }
+    }
+}

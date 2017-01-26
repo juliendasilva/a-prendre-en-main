@@ -1,0 +1,31 @@
+.approach{
+    @include displayFlex();  
+    width: 970px;
+    margin: auto;
+    margin-bottom: 269px;
+    @include breakmax($desktop-s){
+        width: 90%;
+    }
+    @include breakmax($tablet){
+        margin-bottom: 60px;
+    }
+    @include breakmax($mobile){
+        flex-direction: column;
+    }
+    .textContainer{
+        width: 50%;
+        margin-right: 145px;
+        @include breakmax($tablet){
+            margin-right: 125px;
+        }
+        @include breakmax($mobile){
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .activities{
+        @include breakmax($mobile){
+            width: 100%;
+        }
+    }
+}

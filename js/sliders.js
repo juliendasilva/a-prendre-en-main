@@ -12,6 +12,8 @@ $(document).ready(function () {
         asNavFor: '.teams__images',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        arrows: false,
+        dotsClass: 'teams-dots',
     });
 });
