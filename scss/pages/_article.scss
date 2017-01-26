@@ -107,7 +107,7 @@
   display: none;
   @include breakmax($mobile) {
     text-decoration: none;
-    left:50% - 20%;
+    left: 50% - 20%;
     display: block;
     position: fixed;
     bottom: 0;
@@ -120,4 +120,26 @@
     border-radius: 20px;
     margin-bottom: 10px;
   }
+}
+
+#ex1Slider .slider-selection {
+  background: $color4;
+}
+
+.slider .tooltip-inner {
+  display: none;
+}
+
+.slider-track-high {
+  opacity: 0.1;
+  background: $color2;
+}
+
+.slider-handle {
+  background: $color2;
+}
+
+#ex1Slider {
+  width: 100%;
+  margin-bottom: 30px;
 }

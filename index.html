@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test-du-soir</title>
-   <!--  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
-    <!--<link rel="stylesheet" href="css/reset.css">-->
-    <!--<link rel="stylesheet" href="css/fixed-positioning.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/css/bootstrap-slider.min.css">
     <link rel="stylesheet" href="lib/slick-1.6.0/slick/slick.css">
     <link rel="stylesheet" href="dist/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/bootstrap-slider.min.js"></script>
 </head>
 <body>
 
@@ -327,11 +326,12 @@
                 <div class="funding__interact">
                     <div class="funding__content">
                         <p class="text">J’aimerais aider et faire un don de :</p>
-                        <p class="value">100€</p>
+                        <p class="value" id="donationValue">100€</p>
                     </div>
+                    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="0.01" data-slider-value="31.7"/>
                     <div class="funding__range"></div>
                     <div class="funding__button">
-                        <button class="button">Faire un don</button>
+                        <a href="https://fr.ulule.com/10-days-10-songs/"><button class="button" style="cursor:  pointer;">Faire un don</button></a>
                         <p class="info">11 429 € récolté sur 23 638 €</p>
                     </div>
                 </div>
@@ -554,5 +554,6 @@
     });
 </script>
 <script src="js/sliders.js"></script>
+<script src="js/inputRange.js"></script>
 </body>
 </html>
