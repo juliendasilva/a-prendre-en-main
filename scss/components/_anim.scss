@@ -5,7 +5,7 @@
 	background-color:pink;
 }*/
 #scroll-intro{
-    font-family: 'Indie Flower', cursive;
+    font-family: $font2;
     font-size: 40px;
 }
 
@@ -18,10 +18,11 @@
 }
 
 .dialogue{
-    border:1px solid black;
-    height: 140px;
-    width: 35%;
-    background:white;
+    /*border:1px solid black;*/
+    z-index:100;
+    height: auto;
+    width: 45%;
+ /*background:white;*/
     top: 80px;
 }
 
