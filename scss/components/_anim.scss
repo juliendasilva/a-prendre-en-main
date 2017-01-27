@@ -5,30 +5,10 @@
 	background-color:pink;
 }*/
 #scroll-intro{
-    font-family: 'Indie Flower', cursive;
+    font-family: $font2;
     font-size: 40px;
 }
 
-#kanji2{
-    top:30%;
-    height:100px;
-}
-
-#kanji3{
-    top:20%;
-    height:80px;
-    z-index:99;
-}
-
-#kanji4{
-    top:0%;
-    height:100px;
-}
-
-#kanji5{
-    top:45%;
-    z-index:99;
-}
 
 #main-header{
     /*background:DarkGoldenRod ;*/
@@ -38,17 +18,18 @@
 }
 
 .dialogue{
-    border:1px solid black;
-    height: 140px;
-    width: 35%;
-    background:white;
+    /*border:1px solid black;*/
+    z-index:100;
+    height: auto;
+    width: 45%;
+ /*background:white;*/
     top: 80px;
 }
 
 .dialogue p{
     font-size: 23px;
     /*font-family: 'Indie Flower', cursive;*/
-    font-family:sans-serif;
+    font-family:$font1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test-du-soir</title>
+
+    <title>A prendre en main</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/css/bootstrap-slider.min.css">
+
     <link rel="stylesheet" href="lib/slick-1.6.0/slick/slick.css">
     <link rel="stylesheet" href="dist/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/bootstrap-slider.min.js"></script>
@@ -25,50 +27,39 @@
 
     <header>
         <div id="wrapper-main-title" >
-            <p id="scroll-intro"><a href="#containerInfo">Scroll to the bottom ..</a></p>
+            <p id="scroll-intro">Scroll to bottom ...</p>
             <h1 data-_title_animation-0="opacity:0" data-_title_animation-300="opacity:1">
                 <img src="dist/images/title.svg" alt="" >
             </h1>
         </div>
         <div id="leafs">
             <div class="leaf1">
-                <img src="dist/images/leaf-left.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(-100deg); left:-600px; top:-200px" data-_title_animation-350="transform:rotate(-100deg); left:-800px; top:-300px" >
+                <img src="dist/images/leaf-left.png" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(-100deg); left:-600px; top:-200px" data-_title_animation-350="transform:rotate(-100deg); left:-800px; top:-300px" >
             </div>
             <div class="leaf2">
-                <img src="dist/images/leaf-right.gif" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(100deg); left:600px; top:-200px" data-_title_animation-350="transform:rotate(100deg); left:800px; top:-300px">
+                <img src="dist/images/leaf-right.png" alt="" data-_title_animation-0="transform:rotate(0deg); top:0px; left:0px" data-_title_animation-200="transform:rotate(100deg); left:600px; top:-200px" data-_title_animation-350="transform:rotate(100deg); left:800px; top:-300px">
             </div>
         </div>
     </header>
 </div>
 
 <!-- On commence l'animation en "écoutant" le scroll a partir de 1000px de base. -->
-<div class="animation" style="background:#F1C5A5; height:60000px; width:100%">
+<div class="animation" style="background:#F1C5A5; height:59000px; width:100%">
     <!-- Ici s'affiche les images et blocs de texte en fonciton du scroll -->
 
-    <!--&lt;!&ndash; On affiche le decors &ndash;&gt;-->
-    <!-- Back road -->
-    <!-- <div class="back-road"
-        <!--data-0="display:none"-->
-        <!--data-_main_animation-0="display:block; bottom:-10%"-->
-        <!--data-_main_animation-1000="display:block; bottom:0%"-->
-        <!--data-_main_animation-50000="opacity:1"-->
-        <!--data-_main_animation-58000="opacity:0"-->
-        <!--style="background:#F0EBDE; width: 100%; height:450px; z-index:1">-->
-    <!--</div>-->
-    <!-- road-->
     <div>
         <img src="dist/images/ground.gif" alt=""
              data-0= "display:none"
              data-_main_animation-0="display:block; bottom:-50%"
-             data-_main_animation-3000="display:block; bottom:0%"
-             data-_main_animation-10500="opacity:1"
-             data-_main_animation-11000="opacity:0; display:none"
+             data-_main_animation-1000="display:block; opacity:1; bottom:0%"
+             data-_main_animation-7300=""
+            data-_main_animation-8600="opacity:0; display:none"
              style=" width: 100%; height: 44%; z-index:1; ">
     </div>
 
     <!-- On affiche les anims -->
 
-    <div class="dialogue"
+    <!-- <div class="dialogue"
          data-_main_animation-0="display:none;"
          data-_main_animation-300="display:block; opacity:0; right:-5%"
          data-_main_animation-1000="display:block; opacity:1; right:10%"
@@ -76,165 +67,196 @@
          data-_main_animation-10000="opacity:1"
          data-_main_animation-10500="opacity:0; display:none">
         <p>Un enfant habitant de Douala va chercher son eau au puit. </p>
-    </div>
+    </div> -->
+    <img class="dialogue"
+         data-0="display:none;"
+         data-_main_animation-300="display:block; opacity:0; right:-5%; top:20%"
+         data-_main_animation-500="display:block; opacity:1; right:10%"
+         data-_main_animation-2000=""
+         data-_main_animation-2500="opacity:0; display:none"
+        src="dist/images/textes/txt1.png"
+    />
+     <img class="dialogue"
+         data-_main_animation-0="display:none;"
+         data-_main_animation-1500="display:block; opacity:0; left:-5%"
+         data-_main_animation-2100="display:block; opacity:1; left:10%"
+         data-_main_animation-5000=""
+         data-_main_animation-6000="opacity:0; display:none"
+        src="dist/images/textes/txt2.png"
+    />
+
+    <img class="dialogue"
+         data-_main_animation-0="display:none;"
+         data-_main_animation-5200="display:block; opacity:0; right:-5%; top:4%"
+         data-_main_animation-6000="display:block; opacity:1; right:10%"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
+        src="dist/images/textes/txt3.png"
+    />
     <!-- building image -->
 
     <img class="building"
          data-0="display:none"
          data-_main_animation-3000="display:block; left:15%; opacity:0"
          data-_main_animation-4000="opacity:1"
-         data-_main_animation-10500="opacity:1"
-         data-_main_animation-11000="opacity:0; display:none"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
          style="max-height:98px; width:20%; bottom: 44%; z-index:1" src="dist/images/building.png" alt=""
     />
 
+    <img class="small-sun" src="dist/images/sun.gif" alt="" 
+        data-0="display:none"
+        data-_main_animation-3000="display:block; opacity:0"
+         data-_main_animation-4000="opacity:1"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
+         style="right:9%; bottom: 43%; z-index:1; width:13%; min-width:160px"
+
+    />
     <img id="big-tree" src="dist/images/tree.png" alt=""
          data-0="display:none"
          data-_main_animation-3000="display:block; opacity:0"
          data-_main_animation-4000="opacity:1"
-         data-_main_animation-10000="opacity:1"
-         data-_main_animation-10500="opacity:0; display:none"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
     >
     <img class="small-tree" src="dist/images/tree-reverse.png" alt=""
          data-0="display:none"
          data-_main_animation-3000="display:block; opacity:0"
          data-_main_animation-4000="opacity:1"
-         data-_main_animation-10000="opacity:1"
-         data-_main_animation-10500="opacity:0; display:none"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
     >
 
     <img id = "girl" src = "dist/images/fillelette.png"
          data-_main_animation-0="display:none;"
-         data-_main_animation-3000="display:block; opacity:1; left:-25%"
-         data-_main_animation-5000="opacity:1; left:11%"
-         data-_main_animation-7800=""
-         data-_main_animation-9300="left:40%"
-         data-_main_animation-10500="opacity:1"
-         data-_main_animation-11000="opacity:0; display:none">
+         data-_main_animation-800="display:block; opacity:1; left:-25%"
+         data-_main_animation-1200="opacity:1; left:11%"
+         data-_main_animation-5800=""
+         data-_main_animation-7300="left:40%"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
+         >
 
     <img id = "puit" src = "dist/images/puit.png"
          data-_main_animation-0="display:none;"
-         data-_main_animation-5000="display:block; opacity:1; right:-25%"
-         data-_main_animation-7300="opacity:1; right:25%"
-         data-_main_animation-10500="opacity:1"
-         data-_main_animation-11000="opacity:0; display:none">
+         data-_main_animation-4000="display:block; opacity:1; right:-25%"
+         data-_main_animation-5000="opacity:1; right:25%"
+         data-_main_animation-7300=""
+         data-_main_animation-8600="opacity:0; display:none"
+         >
     <!-- FIN DE LA PARTIE 1 -->
 
     <!-- DEBUT DE LA PARTIE 2 -->
-    <div class="dialogue"
-         data-_main_animation-0="display:none;"
-         data-_main_animation-12000="display:block; opacity:1; left:-30%"
-         data-_main_animation-13500="opacity:1; left:7%; top:20%"
-         data-_main_animation-17500="opacity:1"
-         data-_main_animation-19000="opacity:0; display:none">
-    <p> Selon l’Organisation Mondiale de la Santé plus de 60% de la population africaine n’a pas accès à l’eau potable. </p>
-	</div>
+    <img src="dist/images/background-green.jpg"
+         alt=""
+         data-0="display:none"
+         data-_main_animation-7700="display:block; opacity:0;"
+         data-_main_animation-9000="opacity:1"
+         data-_main_animation-14000=""
+         data-_main_animation-14500="opacity:0; display:none"
+         style="width:100%;height:100vh; z-index:50"
+    >
 
-	<div class="dialogue"
-	     data-_main_animation-0="display:none;"
-	     data-_main_animation-14000="display:block; opacity:1; right:-30%"
-	     data-_main_animation-15500="opacity:1; right:3%; top:50%"
-	     data-_main_animation-18400="opacity:1"
-	     data-_main_animation-18500="display:none" >
-	    <p> PK11, quartier de Douala, composé environ de de 5000 habitants, 80% des habitants ne sont pas connectés au réseau de distribution d’eau potable. </p>
-	</div>
+    <img class="dialogue" src="dist/images/textes/txt4.png" alt="" 
+        data-_main_animation-0="display:none;"
+         data-_main_animation-9000="display:block; opacity:1; left:-30%"
+         data-_main_animation-10000="opacity:1; left:7%; top:20%"
+         data-_main_animation-14000=""
+         data-_main_animation-14500="opacity:0; display:none"
+    />
 
-	<img src="dist/images/background-green.jpg"
-	     alt=""
-	     data-0="display:none"
-	     data-_main_animation-11500="display:block; opacity:0;"
-	     data-_main_animation-12000="opacity:1"
-	     data-_main_animation-17500="opacity:1"
-	     data-_main_animation-19000="opacity:0; display:none"
-	     style="width:100%;height:100vh; z-index:50"
-	>
+    <img class="dialogue" src="dist/images/textes/txt5.png" alt="" 
+        data-_main_animation-0="display:none;"
+         data-_main_animation-10000="display:block; opacity:1; right:-30%"
+         data-_main_animation-12000="opacity:1; right:1%; top:50%"
+         data-_main_animation-14000=""
+         data-_main_animation-14500="opacity:0; display:none"
+    />
+
 	<img src="dist/images/verre.svg"
 	     alt=""
 	     data-0="display:none"
-	     data-_main_animation-11500="display:block; opacity:0;height:180vh; width:100%; top:60%"
-	     data-_main_animation-12000="opacity:1"
-	     data-_main_animation-16000="opacity:1;height:70vh; top: 50%"
-	     data-_main_animation-17500="opacity:1"
-	     data-_main_animation-19000="opacity:0; display:none"
+	     data-_main_animation-8500="display:block; opacity:0;height:180vh; width:100%; top:60%"
+	     data-_main_animation-9000="opacity:1"
+	     data-_main_animation-12300="opacity:1;height:70vh; top: 50%"
+	     data-_main_animation-14000=""
+         data-_main_animation-14500="opacity:0; display:none"
 	     style="; z-index:50"
 	>
 	<!-- FIN de la partie 2 -->
 	
 	<!-- DEBUT DE LA PARTIE 3 -->
-	
-	<div class="dialogue"
-	     data-_main_animation-0="display:none;"
-	     data-_main_animation-18500="display:block;opacity:1;right:3%; top:50%" 
-	     data-_main_animation-20000="top:10%"
-	     data-_main_animation-24000="opacity:1; right:20% "
-        data-_main_animation-24500="display:none">
+	<img class="dialogue" src="dist/images/textes/txt6.png" alt=""
+        data-_main_animation-0="display:none;"
+         data-_main_animation-15500="display:block;opacity:1;right:3%; top:40%" 
+         data-_main_animation-17000="top:10%"
+         data-_main_animation-18000="opacity:0; display:none"
+         style="z-index:1"
+    />
 
-	    <p> Un ouvrier vient installer une pompe à eau en creusant plus profondément </p>
-	</div>
-
-	<div class="dialogue"
-         data-0="display:none;"
-        data-_main_animation-24500="display:block; opacity:1; right:20%; top:10%"
-		data-_main_animation-26000=""
-        data-_main_animation-28000="opacity:0; display:none">
-    <p>  Afficher le coût des travaux de 23 638€. </p>
-	</div>
-
+    <img class="dialogue" src="dist/images/textes/txt7.png" alt=""
+        data-_main_animation-0="display:none;"
+         data-_main_animation-18000="display:block;opacity:1;right:3%; top:10%" 
+         data-_main_animation-21000="right:10%"
+         data-_main_animation-23000="opacity:1"
+         data-_main_animation-24020="opacity:0;display:none"
+    />
 
 		<!--Ciel bleu-->
 	<div class="blue-sky"
 		style="background:#a8e9eb; height:100vh; width:100%; z-index: 0"
 		data-0="display:none"
-		data-_main_animation-18000="display:block; opacity:0"
-		data-_main_animation-20000="opacity:1"
-		data-_main_animation-26000=""
-        data-_main_animation-28000="opacity:0; display:none"
+		data-_main_animation-14000="display:block; opacity:0"
+		data-_main_animation-15000="opacity:1"
+		data-_main_animation-23000="opacity:1"
+        data-_main_animation-24020="opacity:0;display:none"
 	>
 		<!-- Sol -->
 	</div>
 	<img src="dist/images/ground.gif" alt=""
              data-0= "display:none"
-             data-_main_animation-19000="display:block; bottom:0%; opacity:0"
-             data-_main_animation-20000="opacity:1"
-             data-_main_animation-26000=""
-         	data-_main_animation-28000="opacity:0; display:none"
+             data-_main_animation-14000="display:block; bottom:0%; opacity:0"
+             data-_main_animation-16000="opacity:1"
+            data-_main_animation-23000="opacity:1"
+            data-_main_animation-24020="opacity:0;display:none"
              style=" width: 100%; height: 44%; z-index:1;"
     >
     <img class="building"
          data-0="display:none"
-         data-_main_animation-19000="display:block; opacity:0"
-         data-_main_animation-20000="opacity:1"
-         data-_main_animation-26000=""
-         data-_main_animation-28000="opacity:0; display:none"
+         data-_main_animation-14000="display:block; opacity:0"
+         data-_main_animation-16000="opacity:1"
+         data-_main_animation-23000="opacity:1"
+         data-_main_animation-24020="opacity:0;display:none"
          style="max-height:98px; width:20%; z-index:2; right:0; bottom:44%; z-index:1" src="dist/images/building.png" alt=""
     />
 		
 	<img class="cloud" src="dist/images/cloud.png" alt=""
 		data-0="display:none"
-        data-_main_animation-19000="display:block; opacity:1; left:0%"
-        data-_main_animation-21000="opacity:1"
-        data-_main_animation-25500="left:20%"
-        data-_main_animation-26000=""
-        data-_main_animation-28000="opacity:0; display:none"
+        data-_main_animation-14000="display:block; opacity:1; left:0%"
+        data-_main_animation-17000="opacity:1"
+        data-_main_animation-18500="left:20%"
+        data-_main_animation-23000="opacity:1"
+         data-_main_animation-24020="opacity:0;display:none"
 
 
         style="width:100%; height:50vh; z-index:1"
-		>	
+	>	
 
     <img class="girl-joy"
          data-0="display:none"
-         data-_main_animation-19000="display:block; opacity:0"
-         data-_main_animation-20000="opacity:1"
-         data-_main_animation-26000=""
-         data-_main_animation-28000="opacity:0; display:none"
-         style="height: auto; width: 10%; z-index: 2; bottom: 22%; right:14%; display: block; opacity: 1;" 
+         data-_main_animation-14000="display:block; opacity:0"
+         data-_main_animation-15500="opacity:1"
+         data-_main_animation-23000="opacity:1"
+         data-_main_animation-24020="opacity:0;display:none"
+         style="height: auto; width: 10%; z-index: 3; bottom: 22%; right:14%; display: block; opacity: 1;" 
          src="dist/images/girl-joy.png" alt=""
     />
 	<!-- Trois goutte d'eau -->
     <img class="water-drop"
          data-0="display:none"
-         data-_main_animation-19800="display:block; opacity:0; bottom: 36%"
-         data-_main_animation-20000="opacity:1"
+         data-_main_animation-14800="display:block; opacity:0; bottom: 36%"
+         data-_main_animation-16000="opacity:1"
          data-_main_animation-20800="bottom:23%"
          data-_main_animation-21000="display:none;"
          data-_main_animation-21010="display:block; bottom:36%"
@@ -249,8 +271,8 @@
 
      <img class="water-bol"
          data-0="display:none"
-         data-_main_animation-19000="display:block; opacity:0"
-         data-_main_animation-20000="opacity:1"
+         data-_main_animation-14000="display:block; opacity:0"
+         data-_main_animation-16000="opacity:1"
          data-_main_animation-23000="opacity:1"
          data-_main_animation-24020="opacity:0;display:none"
          style="height: auto; width: 9%; z-index: 2; bottom: 22%; right:38%; display: block; opacity: 1;" 
@@ -259,61 +281,242 @@
 
 	<img class="worker"
          data-0="display:none"
-         data-_main_animation-19000="display:block; opacity:0"
-         data-_main_animation-20000="opacity:1"
+         data-_main_animation-14000="display:block; opacity:0"
+         data-_main_animation-16000="opacity:1"
          data-_main_animation-23000="opacity:1"
          data-_main_animation-24020="opacity:0;display:none"
          style="height: auto; width: 40%; z-index: 2; bottom: 22%; left:20%; display: block; opacity: 1;" 
          src="dist/images/worker.png" alt=""
     />
 
-	<img class="worker-2"
+    <img src="dist/images/sun-2.svg" alt=""
+    	data-0="display:none"
+        data-_main_animation-14000="display:block; opacity:1;"
+        data-_main_animation-23000="opacity:1"
+        data-_main_animation-24020="opacity:0;display:none"
+        style="width:8%; z-index:0; left:17%; bottom:73%;"
+    >
+
+   
+	
+    <!-- Fin partie 3 -->
+    <!-- DEBUT PARTIE 4 -->
+
+    <img src="dist/images/background-pig.jpg" alt=""
+        data-0="display:none"
+        data-_main_animation-23400="display:block;opacity:0; width:320%; height:100vh; left:0%"
+        data-_main_animation-24000="opacity:1;"
+        data-_main_animation-30000=""
+        data-_main_animation-33000="left:-110%"
+        data-_main_animation-40000=""
+        data-_main_animation-43000="left:-220%"
+        data-_main_animation-47000=""
+        data-_main_animation-49000="opacity:0; display:none"
+        style="z-index:1"
+    >
+
+    <img class="dialogue" src="dist/images/textes/txt8.png" alt=""
+        data-0="display:none;"
+        data-_main_animation-24020="display:block; opacity:1; right:6%; top:10%"
+        data-_main_animation-29000="display:none"
+        style="z-index:2"
+    />
+    
+    <img class="dialogue" src="dist/images/textes/txt9.png" alt=""
+         data-0="display:none;"
+         data-_main_animation-29000="display:block; opacity:1; right:6%; top:10%"
+         data-_main_animation-30000=""
+        data-_main_animation-31500="right:60%"
+        data-_main_animation-32000=""
+        data-_main_animation-32500="opacity:0; display:none"
+        style="z-index:2"
+    />
+
+    <img class="dialogue" src="dist/images/textes/txt10.png" alt="" 
+        data-0="display:none;"
+         data-_main_animation-34000="display:block; opacity:0; right:5%; top:30%"
+         data-_main_animation-35000="opacity:1; top:10%"
+        data-_main_animation-39000=""
+        data-_main_animation-40000="opacity:0; display:none"
+        style="z-index:2"
+    />
+
+    <img src="dist/images/pig.png" alt=""
+        data-0="display:none"
+        data-_main_animation-24500="display:block; opacity:0; bottom:10%; left:-30%"
+        data-_main_animation-26000="opacity:1; left:25%"
+         data-_main_animation-47000=""
+        data-_main_animation-49000="opacity:0; display:none"
+        style="width:40%; z-index: 2"
+    >
+
+    <img src="dist/images/piece.svg" alt=""
+        data-0="display:none"
+        data-_main_animation-27000="display:block; opacity:1; top:-12%; left:42%; width:7%;"
+        data-_main_animation-28500="top:60%; display:none"
+        data-_main_animation-28510="top:-12%; display:block"
+        data-_main_animation-30000="top:60%;"
+        data-_main_animation-35000=""
+        data-_main_animation-37000="top:10%;"
+        data-_main_animation-37010=""
+        data-_main_animation-38000="width:13%; left:39%"
+        data-_main_animation-39000="opacity:0; display:none"
+        data-_main_animation-44000="opacity:1; display:block; width:7%; left:42%; top:-12%"
+        data-_main_animation-46000="top:60%; display:none"
+        data-_main_animation-46010=""
+        data-_main_animation-46020="top:-12%; display:block"
+        data-_main_animation-47000="top:60%; display:none"
+
+        style="z-index: 1"
+    >
+    <!-- Quelque autre pieces pour la derniere partie du cochon -->
+    <img src="dist/images/piece.svg" alt=""
+        data-0="display:none"
+        data-_main_animation-45000="display:block; opacity:1; top:-12%; left:42%; width:7%;"
+        data-_main_animation-46000="top:60%; display:none;"
+        style="z-index: 1"
+    >
+    <img src="dist/images/piece.svg" alt=""
+        data-0="display:none"
+        data-_main_animation-45300="display:block; opacity:1; top:-12%; left:42%; width:7%;"
+        data-_main_animation-46300="top:60%; display:none;"
+        style="z-index: 1"
+    >
+
+    <img class="dialogue" src="dist/images/textes/txt11.png" alt="" 
+        data-0="display:none;"
+         data-_main_animation-43000="display:block; opacity:0; right:35%; top:10%"
+         data-_main_animation-44500="opacity:1; right:5%"
+        data-_main_animation-47999=""
+        data-_main_animation-48000="opacity:0; display:none"
+       
+        style="z-index:2"
+    />
+    <!-- Fin de la partie 4 -->
+
+<!-- DEBUT PARTIE 5 -->
+    
+    <img class="dialogue" src="dist/images/textes/txt12.png" alt="" 
+        data-0="display:none;"
+         data-_main_animation-48000="display:block; opacity:1; right:5%; top:30%"
+         data-_main_animation-51000="top:10%"
+         data-_main_animation-52460=""
+        data-_main_animation-53450="opacity:0; display:none"
+        style="z-index:2"
+    />
+
+    <img class="dialogue" src="dist/images/textes/txt13.png" alt="" 
+        data-0="display:none;"
+         data-_main_animation-53450="display:block; opacity:0; right:10%; top:10%"
+        data-_main_animation-54000="opacity:1"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
+        style="z-index:2"
+    />
+
+    <div class="blue-sky"
+            style="background:#b5f8fa; height:100vh; width:100%; z-index: 0"
+            data-0="display:none"
+            data-_main_animation-48020="display:block; opacity:0; bottom:0%;"
+            data-_main_animation-49350="opacity:1"
+            data-_main_animation-56460=""
+            data-_main_animation-58450="opacity:0; display:none"
+    ></div>
+
+    <img src="dist/images/back-ombre.jpg" alt=""
+            data-0= "display:none"
+            data-_main_animation-49020="display:block; opacity:0; bottom:0%;"
+            data-_main_animation-49350="opacity:1"
+            data-_main_animation-56460=""
+            data-_main_animation-58450="opacity:0; display:none"
+             style=" width: 100%; height: 44%; z-index:1;"
+    >
+    <img src="dist/images/building.png" alt=""
+        class="building"
          data-0="display:none"
-         data-_main_animation-24020="display:block; opacity:0"
-         data-_main_animation-24500="opacity:1"
-         data-_main_animation-26000=""
-         data-_main_animation-28000="opacity:0; display:none"
+         data-_main_animation-49020="display:block; opacity:0;"
+        data-_main_animation-49350="opacity:1"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
+         style="max-height:98px; width:20%; z-index:2; right:0; bottom:44%; z-index:1" 
+    />
+        
+    <img class="cloud" src="dist/images/cloud.png" alt=""
+        data-0="display:none"
+        data-_main_animation-49020="display:block; opacity:0; left:0%"
+        data-_main_animation-49350="opacity:1"
+        data-_main_animation-53350="left:20%"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
+
+        style="width:100%; height:50vh; z-index:1"
+    > 
+
+    <img class="last-girl-joy"
+             data-0="display:none"
+            data-_main_animation-49020="display:block; opacity:0; bottom: 20%; right:12%"
+            data-_main_animation-49350="opacity:1"
+            data-_main_animation-50450="bottom:26%"
+            data-_main_animation-52550="bottom:20%"
+            data-_main_animation-54450="bottom:26%"
+            data-_main_animation-56450="bottom:20%"
+            data-_main_animation-56460=""
+            data-_main_animation-58450="opacity:0; display:none"
+            
+             style="height: auto; width: 14%; z-index: 2;" 
+             src="dist/images/girl-3.png" alt=""
+    />
+
+     <img class="boy-joy"
+             data-0="display:none"
+             data-_main_animation-49020="display:block; opacity:0; bottom: 21%; right:23%;"
+             data-_main_animation-49350="opacity:1"
+             data-_main_animation-50850="bottom:25%"
+            data-_main_animation-51550="bottom:21%"
+            data-_main_animation-52550="bottom:25%"
+            data-_main_animation-53550="bottom:21%"
+            data-_main_animation-56460=""
+            data-_main_animation-58450="opacity:0; display:none"
+             style="height: auto; width: 6%; z-index: 2;" 
+             src="dist/images/boy.png" alt=""
+        />
+    
+    <img class="girl-yellow-joy"
+         data-0="display:none"
+         data-_main_animation-49020="display:block; opacity:0; bottom: 18%; right:8%;"
+        data-_main_animation-49350="opacity:1"
+        data-_main_animation-50350="bottom:24%"
+        data-_main_animation-51350="bottom:18%"
+        data-_main_animation-52350="bottom:24%"
+        data-_main_animation-53350="bottom:18%"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
+
+         style="height: auto; width: 6%; z-index: 2;" 
+         src="dist/images/girl-yellow.png" alt=""
+    />
+
+    <img class="worker-2"
+         data-0="display:none"
+         data-_main_animation-49020="display:block; opacity:0;"
+        data-_main_animation-49350="opacity:1"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
          style="height: auto; width: 45%; z-index: 2; bottom: 21%; left:18%; display: block; opacity: 1;" 
          src="dist/images/worker-2.png" alt=""
     />
 
-    <!-- <img src="dist/images/sun-2.svg" alt=""
-    	data-0="display:none"
-        data-_main_animation-30000="display:block; opacity:1; left:0%; bottom:48%;"
-        data-_main_animation-35000="left:50%; bottom:60%"
-        data-_main_animation-40000='left:100%; bottom:48%'
-        style="width:14%; z-index:0"
-    > -->
-
     <img src="dist/images/sun-2.svg" alt=""
-    	data-0="display:none"
-        data-_main_animation-19000="display:block; opacity:1;"
-        data-_main_animation-26000=""
-        data-_main_animation-28000="opacity:0; display:none"
+        data-0="display:none"
+        data-_main_animation-49020="display:block; opacity:0;"
+        data-_main_animation-49350="opacity:1"
+        data-_main_animation-56460=""
+        data-_main_animation-58450="opacity:0; display:none"
         style="width:8%; z-index:0; left:17%; bottom:73%;"
     >
-
-    <img class="boy-joy"
-         data-0="display:none"
-         data-_main_animation-24020="display:block; opacity:0"
-         data-_main_animation-24450="opacity:1"
-         data-_main_animation-26000=""
-         data-_main_animation-28000="opacity:0; display:none"
-         style="height: auto; width: 6%; z-index: 2; bottom: 22%; right:23%; display: block; opacity: 1;" 
-         src="dist/images/boy.png" alt=""
-    />
-	
-	<img class="girl-yellow-joy"
-         data-0="display:none"
-         data-_main_animation-24020="display:block; opacity:0"
-         data-_main_animation-24050="opacity:1"
-         data-_main_animation-26000=""
-         data-_main_animation-28000="opacity:0; display:none"
-         style="height: auto; width: 6%; z-index: 2; bottom: 22%; right:8%; display: block; opacity: 1;" 
-         src="dist/images/girl-yellow.png" alt=""
-    />
-	
+<!-- Fin de la partie 5 -->
 </div>
+
  <!--FIN de la partie annimation -->
 
 <div class="containerInfo" id="containerInfo">
@@ -540,7 +743,6 @@
         </div>
     </footer>
 </div>
-</div>
 
 <script src="lib/jquery-3.1.1.min.js"></script>
 <script src="lib/slick-1.6.0/slick/slick.js"></script>
@@ -549,7 +751,7 @@
     var s = skrollr.init({
         constants:{
             title_animation:0,
-            main_animation:600
+            main_animation:200
         }
     });
 </script>
