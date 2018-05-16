@@ -8,7 +8,7 @@ https://a-prendre-en-main.netlify.com/
 
 # Contexte
 
-À prendre en main est une association de la loi 1901 qui soutient les populations défavorisées en prônant leur autonomie.
+À prendre en main est une association de loi 1901 dont l’objet est de promouvoir et soutenir l’aide au développement économique et social des populations défavorisées en prônant leur autonomie.
 
 # Problématique
 
