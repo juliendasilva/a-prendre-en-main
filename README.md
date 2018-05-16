@@ -1,6 +1,10 @@
-# Slides
+# Présentation
 
 https://github.com/juliendasilva/a-prendre-en-main/blob/master/presentation.pdf
+
+# Lien
+
+https://a-prendre-en-main.netlify.com/
 
 # Contexte
 
