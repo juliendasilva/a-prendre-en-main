@@ -1,5 +1,8 @@
 # Présentation
 
+[![GuardRails badge](https://badges.production.guardrails.io/juliendasilva/a-prendre-en-main.svg)](https://www.guardrails.io)
+
+
 https://github.com/juliendasilva/a-prendre-en-main/blob/master/presentation.pdf
 
 # Lien
